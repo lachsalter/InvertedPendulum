@@ -1,3 +1,4 @@
 *.pdf binary
 *.STL binary
 *.stl binary
+*.FCStd binary
