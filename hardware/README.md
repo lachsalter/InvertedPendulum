@@ -25,13 +25,16 @@ Gedruckte Teile aus dem [SimpleFOC Reaction Wheel Pendulum](https://github.com/s
 | 2 | Pendelarm (angepasst) | [swing_arm.stl](mechanics/stl/swing_arm.stl) · [FreeCAD-Quelle](mechanics/cad/swing_arm.FCStd) | gedruckt | Eigene Version des Original-`pendulum_arm`, ca. 132 × 47 × 12 mm |
 | 3 | Schwungrad (Reaction Wheel) | [reaction_wheel.STL](mechanics/stl/reaction_wheel.STL) | gedruckt | Möglichst präzise drucken, sonst vibriert es |
 | 4 | Kabelhalter (optional) | [cable_holder.STL](mechanics/stl/cable_holder.STL) | gedruckt | – |
+| 5 | Pendelachse, hohl, Ø 6,35 mm (1/4") × 35 mm | [hollow_shaft_6.35mm.stl](mechanics/stl/hollow_shaft_6.35mm.stl) | gedruckt | Eigene Konstruktion, ersetzt das 8-mm-Alurohr. Passt in die R4-2RS-Lager |
+| 6 | Pendelachse, hohl, Ø 6,6 mm × 35 mm | [hollow_shaft_6.6mm.stl](mechanics/stl/hollow_shaft_6.6mm.stl) | gedruckt | Variante mit Übermaß, z. B. als Ausgleich für Druckschrumpf |
+| 7 | Achse mit Stützstruktur, ca. Ø 16,7 mm × 35 mm | [shaft_with_supports.stl](mechanics/stl/shaft_with_supports.stl) | gedruckt | Druckvariante der Achse, Stützen nach dem Druck entfernen |
 
 ### Zubehör laut SimpleFOC-Design
 
 | Teil | Anzahl | Bei uns vorhanden? |
 |------|:-----:|--------------------|
-| Kugellager 8 × 16 × 5 mm (688) | 3 | Nein. Die R4-2RS (6,35 × 15,88 × 4,98 mm) haben eine kleinere Bohrung, siehe Hinweise |
-| Aluminiumrohr Ø 8 mm, 30 mm lang (Pendelachse) | 1 | offen |
+| Kugellager 8 × 16 × 5 mm (688) | 3 | Ersetzt durch R4-2RS (6,35 × 15,88 × 4,98 mm), siehe Hinweise |
+| Aluminiumrohr Ø 8 mm, 30 mm lang (Pendelachse) | 1 | Ersetzt durch gedruckte 1/4"-Achse (Teil 5) |
 | Schrauben M3 × 10 mm | 7 | offen |
 | Schrauben M4 × 50 mm + Muttern | 2 | offen |
 
@@ -39,6 +42,6 @@ Gedruckte Teile aus dem [SimpleFOC Reaction Wheel Pendulum](https://github.com/s
 
 - **GM4108H:** Die Händlerseiten widersprechen sich bei der Leerlaufdrehzahl (RobotShop 1025–1089 rpm, iFlight 513–567 rpm). Ein offizielles Datenblatt von iFlight gibt es nicht; den Wert besser selbst messen.
 - **BMX160:** Ein offizielles Bosch-Datenblatt ist nicht mehr direkt verfügbar. Die verlinkte Kopie ist Rev. 1.1 (Mai 2018), Dokument BST-BMX160-DS000-11.
-- **R4-2RS:** Die gedruckte Basis ist für 8 × 16 × 5-mm-Lager und eine 8-mm-Achse ausgelegt. Die R4-2RS sind 0,12 mm kleiner im Außendurchmesser und haben 6,35 mm statt 8 mm Bohrung. Entweder 688-Lager kaufen oder Basis und Achse auf 1/4" anpassen.
+- **R4-2RS statt 688:** Die Achse ist auf die 1/4"-Bohrung der R4-2RS angepasst (gedruckt statt Alurohr). Die Basis ist die Originalversion mit Lagersitzen für 16 mm Außendurchmesser. Die R4-2RS sind mit 15,88 mm etwas kleiner und sitzen dadurch leicht locker. Beim Zusammenbau prüfen, ob sie spielfrei sitzen.
 - **Motor-Lochbild:** Das Original nutzt eine ältere Version des GM4108. Der Pendelarm ist bereits angepasst. Beim Schwungrad noch prüfen, ob die Löcher auf unseren GM4108H-120T passen.
 - **Datenblätter lokal:** Alle verfügbaren PDFs liegen unter `datasheets/`. Der STM32G431CB ist der Mikrocontroller auf den B-G431B-ESC1-Boards. Für die Gimbalmotoren, den XT90-Stecker und das Lager gibt es keine herunterladbaren Datenblätter.
