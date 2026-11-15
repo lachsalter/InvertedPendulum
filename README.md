@@ -2,7 +2,7 @@
 
 Kombiniertes Hardware- und Software-Projekt: ein inverses Pendel mit BLDC-Gimbalmotoren und FOC-Regelung.
 
-- [Hardware-Übersicht und Datenblätter](hardware/README.md)
+- [Hardware-Übersicht: Elektronik, Datenblätter, 3D-Druckteile](hardware/README.md)
 
 ## Vorbild: SimpleFOC Reaction Wheel Pendulum
 
